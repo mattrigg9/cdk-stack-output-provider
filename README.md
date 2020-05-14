@@ -7,13 +7,15 @@ AWS CloudFormation has an architectural limitation that prevents a stack from ac
 ```ts
 import { StackOutputProvider } from "cdk-stack-output-provider";
 
-const originResponseLambdaVersionArn = new StackOutputProvider(
+const stackOutputResource = new StackOutputProvider(
     this,
-    "ResponseLambdaFunctionName",
+    "StackOutputResource",
     {
         region: 'us-east-1',
         stackName: "<STACK_NAME>",
         outputKey: "<STACK_OUTPUT_KEY>"
     }
 );
+
+const myOutputValue: string = stackOutputResource.output;
 ```
