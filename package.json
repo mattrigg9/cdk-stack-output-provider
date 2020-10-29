@@ -29,8 +29,8 @@
   },
   "homepage": "https://github.com/mattrigg9/cdk-stack-output-provider#readme",
   "dependencies": {
-    "@aws-cdk/aws-iam": "^1.38.0",
-    "@aws-cdk/core": "^1.38.0"
+    "@aws-cdk/aws-iam": "^1.67.0",
+    "@aws-cdk/core": "^1.67.0"
   },
   "devDependencies": {
     "aws-sdk": "^2.676.0",
